@@ -16,6 +16,15 @@ body {
   font-family: 'Lato', sans-serif;
   color: #767676;
 }
+
+a1 {
+  color:#767676;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 a {
   color: #FF3161;
   text-decoration: none;
@@ -813,7 +822,7 @@ blockquote {
   float: none;
   display: inline-block;
 }
-.navbar-nav li a {
+.navbar-nav li {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   padding: 0 17px;
@@ -825,8 +834,10 @@ blockquote {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.navbar-nav li:last-child a {
+.navbar-nav li:last-child li{
   padding-right: 0;
+
+  
 }
 .navbar .nav-wrap {
   width: auto;
@@ -845,7 +856,54 @@ blockquote {
   -o-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
 }
+
+
+
+
+
+
+
+.navbar-nav li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding: 0 17px;
+  line-height: 70px;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-nav li:last-child a {
+  padding-right: 0;
+
+  
+}
+.navbar .nav-wrap {
+  width: auto;
+  float: right;
+}
+.navbar-collapse {
+  padding: 0;
+  border-top: none;
+}
+.navbar-collapse.in {
+  overflow-x: hidden;
+}
+.nav-solid {
+  height: 70px;
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+
 .nav-solid .navbar-nav > li > a {
+  color: #434343;
+}
+
+.nav-solid .navbar-nav > li {
   color: #434343;
 }
 .nav-solid .navigation {
@@ -881,6 +939,16 @@ blockquote {
 .navigation.sticky .navbar-nav > li > a {
   line-height: 70px;
 }
+
+
+.nav-transparent .navbar-default .navbar-nav > li {
+  color: #fff;
+}
+.navigation.sticky .navbar-nav > li {
+  line-height: 70px;
+}
+
+
 .navbar-nav > li > a:hover,
 .nav-transparent .navbar-default .navbar-nav > li > a:hover,
 .navbar .navbar-nav > .active > a,
@@ -1716,6 +1784,19 @@ blockquote {
   color: #434343;
   border: 1px solid #f8f8f8;
 }
+
+
+.widget .search-form input[type="email"] {
+  border: none;
+  padding: 12px 10px;
+  font-size: 13px;
+  width: 100%;
+  background: #f8f8f8;
+  border: 0 none;
+  outline: 0;
+  color: #434343;
+  border: 1px solid #f8f8f8;
+}
 .widget .search-form .submit-search {
   border: medium none;
   cursor: pointer;
@@ -1903,6 +1984,7 @@ blockquote {
   margin-bottom: 20px;
 }
 .contact-form-item input[type="text"],
+.contact-form-item input[type="email"],
 .contact-form-item input[type="password"],
 .contact-form-item textarea {
   background: #f5f5f5;
@@ -1913,6 +1995,7 @@ blockquote {
   padding: 10px 15px;
 }
 .contact-form-item input[type="text"]:focus,
+.contact-form-item input[type="email"]:focus,
 .contact-form-item input[type="password"]:focus,
 .contact-form-item textarea:focus {
   outline: none;
@@ -1942,6 +2025,7 @@ blockquote {
   margin-bottom: 0;
 }
 .contact-form-dark .contact-form-item input[type="text"],
+.contact-form-dark .contact-form-item input[type="email"],
 .contact-form-dark .contact-form-item input[type="password"],
 .contact-form-dark .contact-form-item textarea {
   background: #5d5d5d;
