@@ -51,7 +51,9 @@
   <style>
 	/*add full-width input fields*/
 	input[type=text],
-	input[type=password] {
+	input[type=password],
+    input[type=email],
+    input[type=number]   {
 		width: 100%;
 		padding: 12px 20px;
 		margin: 8px 0;
@@ -170,7 +172,9 @@
     @media screen and (max-width: 1502px) {
         
         input[type=text],
-	input[type=password] {
+        input[type=password],
+    input[type=email],
+    input[type=number]  {
 		width: 80%;
 		padding: 12px 20px;
 		margin: 8px 0;
@@ -513,7 +517,7 @@
                     </div>
                     <h4>Animated Videos</h4>
                     <div class="service-text">
-                        <p>You will get a minimum 30sec duration, best quality Animated Video. Thereis an option to include the Caricature. You will get an easily shareables video file.</p>
+                        <p>You will get a minimum 30sec duration, best quality Animated Video. There is an option to include the Caricature. You will get an easily shareables video file.</p>
                     </div>
                       <button onclick="document.getElementById('id01').style.display='block'" class="sendnext btn btn-second btn-theme wow fadeInUp"  data-lang="en">Order Now</button>
                 </div>                   
@@ -559,7 +563,7 @@
                     </div>
                     <h4>Other Stationary</h4>
                     <div class="service-text">
-                        <p>We are also providing standee and all other assets using Digital Invitations. We have an experienced Graphics team who will do your all design work easier. </p>
+                        <p>We are also providing standee and all other assets usein Digital Invitations. We have an experienced Graphics team who will do your all design work easier. </p>
                     </div>
                     <button onclick="document.getElementById('id01').style.display='block'" class="sendnext btn btn-second btn-theme wow fadeInUp"  data-lang="en">Order Now</button>
                 </div>                   
@@ -1165,14 +1169,14 @@
             <input type="text" placeholder=" Write Your Name Here " name="entry.1361404915" required><br>
 
             <label><b>Email</b></label><br>
-            <input type="text" placeholder="Your Mail Address" name="entry.706253180" required><br>
+            <input type="email" placeholder="Your Mail Address" name="entry.706253180" required><br>
 
             <label><b>Phone Number</b></label><br>
-            <input type="text" placeholder="10 digit Calling Number" name="entry.83573000" required><br><br>
+            <input type="number"  pattern="\d{10}"  placeholder="10 digit Calling Number" name="entry.83573000" required><br><br>
             <label><b>Required Service(s)</b></label><br>
             <label>  
-                Animated Videos <input type="checkbox" name="entry.2004332184" value="Animated Videos">  &nbsp;&nbsp;&nbsp;&nbsp; 
-                Digital Cards <input type="checkbox" name="entry.2004332184" value="Digital Cards">  &nbsp;&nbsp;&nbsp;&nbsp; 
+                Animated Videos <input type="checkbox" name="entry.2004332184" value="Animated Videos" >  &nbsp;&nbsp;&nbsp;&nbsp; 
+                Digital Cards <input type="checkbox" name="entry.2004332184" value="Digital Cards" >  &nbsp;&nbsp;&nbsp;&nbsp; 
                 Web Invitations <input type="checkbox" name="entry.2004332184" value="Web Invitations">  &nbsp;&nbsp;&nbsp;&nbsp; 
                 Other Stationary <input type="checkbox" name="entry.2004332184" value="Other Stationary"> 
             </label> <br>
