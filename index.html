@@ -7,9 +7,9 @@
     
     <title>Govindam Diginvites</title>
     
-    <meta name="description" content="N.Agency - Responisve Landing Page for Agency">
-    <meta name="keywords" content="">
-    <meta name="author" content="tabthemes">
+    <meta name="description" content="We provide the best quality invitation services in the form of Caricatures, Animated Videos, Websites, Posters, and many other types of products.">
+    <meta name="keywords" content="Caricatures, Animated Video, Invitaion Website, Digital Invitaion Services, Animation Services, Poster Design, Invitaion Card Design">
+    <meta name="author" content="Govindam Diginvites">
     
     <!-- Favicons -->
     <link rel="shortcut icon" href="img/favicon.png">
@@ -46,6 +46,220 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
+
+  <style>
+	/*add full-width input fields*/
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 2px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	/*set styles for the cancel button*/
+	.cancelbtn {
+		padding: 14px 20px;
+		background-color: #434343;
+	}
+	/*float cancel and signup buttons and add an equal width*/
+	.cancelbtn,
+	.signupbtn {
+		float: left;
+		width: 50%
+	}
+	/*add padding to container elements*/
+	.container {
+		padding: 16px;
+	}
+	/*define the modal’s background*/
+	
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		padding-top: 60px;
+	}
+	/*define the modal-content background*/
+	
+	.modal-content {
+		background-color: #fefefe;
+		margin: 5% auto 15% auto;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	/*define the close button*/
+	
+	.close {
+		position: absolute;
+		right: 35px;
+		top: 15px;
+		color: #000;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	/*define the close hover and focus effects*/
+	
+	.close:hover,
+	.close:focus {
+		color: red;
+		cursor: pointer;
+	}
+	
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+    button {
+		background-color: #FF3161;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		cursor: pointer;
+		width: 100%;
+	}
+
+   
+
+	@media screen and (max-width: 400px) {
+        
+     
+    .modal {
+
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		padding-top: 100px;
+	}
+	/*define the modal-content background*/
+	
+	.modal-content {
+     
+		background-color: #fefefe;
+		margin: 100, 15;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	/*define the close button*/
+		.cancelbtn,
+		.signupbtn {
+			width: 100%;
+		}
+	}
+
+
+    @media screen and (max-width: 1502px) {
+        
+        input[type=text],
+	input[type=password] {
+		width: 80%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 2px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	/*set styles for the cancel button*/
+	.cancelbtn {
+		padding: 14px 20px;
+        
+		background-color: #434343;
+	}
+	/*float cancel and signup buttons and add an equal width*/
+	.cancelbtn,
+	.signupbtn {
+		float: left;
+		width: 40%
+	}
+	/*add padding to container elements*/
+	.container {
+		padding: 16px;
+	}
+	/*define the modal’s background*/
+	
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.4);
+		padding-top: 60px;
+	}
+	/*define the modal-content background*/
+	
+	.modal-content {
+		background-color: #fefefe;
+		margin: 5% auto 15% auto;
+		border: 1px solid #888;
+		width: 80%;
+	}
+	/*define the close button*/
+	
+	.close {
+		position: absolute;
+		right: 35px;
+		top: 15px;
+		color: #000;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	/*define the close hover and focus effects*/
+	
+	.close:hover,
+	.close:focus {
+		color: red;
+		cursor: pointer;
+	}
+	
+	.clearfix::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+    button {
+		background-color: #FF3161;
+		color: white;
+		padding: 14px 10px;
+		margin: 8px 0;
+		cursor: pointer;
+		width: 80%;
+	}
+
+   
+	}
+
+
+    
+
+</style>
+
+
   <body class="homepage_slider" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
     
     
@@ -184,16 +398,16 @@
                     data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]'
                     data-responsive_offset="on" 
                     data-responsive="off"                   
-                    style=""><a data-scroll href='#portfolio' class='btn btn-main btn-white'>View Projects</a>
+                    style=""><a data-scroll href='#service' class='btn btn-main btn-white'>Our Services</a>
                   </div>           
                 
                 </li>
 
                 <!-- slider Item 2 -->
-                <li data-index="rs-3" data-transition="slideremoveright" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500" data-rotate="0"  data-saveperformance="off">
+                <!-- <li data-index="rs-3" data-transition="slideremoveright" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500" data-rotate="0"  data-saveperformance="off">
                   <img src="img/slider/s3.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
 
-                  <!-- LAYER NR. 1 -->
+                 
                   <div class="tp-caption NotGeneric-Title tp-resizeme black-color rs-parallaxlevel-3" 
                     id="slide-2-layer-1" 
                     data-x="['left','left','left','left']" data-hoffset="['0','50','0','0']" 
@@ -213,10 +427,10 @@
                     data-splitout="none" 
                     data-responsive_offset="on" 
                     data-elementdelay="0.05"                    
-                    style="z-index: 6; ;">Creative & Digital
+                    style="z-index: 6; ;">Creative & Eco Friendly
                   </div>
 
-                  <!-- LAYER NR. 2 -->
+                 
                   <div class="tp-caption tp-resizeme NotGeneric-Text black-color rs-parallaxlevel-4" 
                     id="slide-2-layer-2" 
                     data-x="['left','left','left','left']" data-hoffset="['0','50','0','0']" 
@@ -235,10 +449,12 @@
                     data-splitin="none" 
                     data-splitout="none" 
                     data-responsive_offset="on"                   
-                    style="z-index: 6; ">Particular unaffected projection sentiments no my. Music marry as at cause<br> party worth weeks. Saw how marianne graceful dissuade new outlived.<br> Uneasy no settle whence nature narrow.
-                  </div>
+                
+                    style="z-index: 6; ">Since they provide a more practical, cost-effective, and environmentally <br> friendly manner of notifying your guests of your event, <br> <b>Digital Invites have been slowly gaining popularity.</b>
 
-                  <!-- LAYER NR. 3 -->
+                </div>
+
+                 
                   <div class="tp-caption rs-parallaxlevel-5" 
                     id="slide-2-layer-3" 
                     data-x="['left','left','left','left']" data-hoffset="['0','50','0','0']" 
@@ -258,85 +474,12 @@
                     data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]'
                     data-responsive_offset="on" 
                     data-responsive="off"                   
-                    style="white-space: nowrap;"><a data-scroll href='#portfolio' class='btn btn-main btn-black'>View Projects</a>
+                    style="white-space: nowrap;"><a data-scroll href='#contact' class='btn btn-main btn-black'>Contact Us</a>
                   </div>          
                 
-                </li>
+                </li> -->
 
-                <!-- slider Item 3 -->
-                <li data-index="rs-2" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500" data-rotate="0"  data-saveperformance="off">
-                  <img alt="" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="5000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="110" src="img/slider/s2.jpg">
-
-                  <!-- LAYER NR. 1 -->
-                  <div class="tp-caption NotGeneric-Title tp-resizeme white-color rs-parallaxlevel-3" 
-                    id="slide-3-layer-1" 
-                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['-75','-70','-70','-45']" 
-                    data-fontsize="['70','60','60','36']"
-                    data-lineheight="['70','60','60','50']"
-                    data-width="none"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"              
-                    data-transform_in="x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                    data-start="1000" 
-                    data-splitin="chars" 
-                    data-splitout="none" 
-                    data-responsive_offset="on" 
-                    data-elementdelay="0.05"                    
-                    style="z-index: 5; white-space: nowrap;">100% Responsive.
-                  </div>
-
-                  <!-- LAYER NR. 2 -->
-                  <div class="tp-caption NotGeneric-SubTitle white-color tp-resizeme rs-parallaxlevel-2" 
-                    id="slide-3-layer-2" 
-                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
-                    data-fontsize="['28','24','24','20']"
-                    data-lineheight="['28','24','36','30']"
-                    data-width="none"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"
-                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                    data-start="1500" 
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on"                    
-                    style="z-index: 6; white-space: nowrap;">Create Beautiful Websites
-                  </div>
-
-                  <!-- LAYER NR. 3 -->
-                  <div class="tp-caption rs-parallaxlevel-5" 
-                    id="slide-3-layer-3" 
-                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['90','90','100','75']" 
-                    data-width="none"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"
-                    data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-                    data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;"
-                    data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeInOut;" 
-                    data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                    data-mask_out="x:inherit;y:inherit;" 
-                    data-start="2000" 
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]'
-                    data-responsive_offset="on" 
-                    data-responsive="off"                   
-                    style=""><a href='#' class='btn btn-main btn-transparent-light'>Purchase Now</a>
-                  </div>
-
-                </li>
-
+               
               </ul>
               <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
           </div>
@@ -352,9 +495,9 @@
             <div class="col-md-8 col-md-offset-2">
                 <!-- Section Title -->
                 <div class="section-title text-center m-bottom-40">
-                    <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s"><strong>Service</strong></h2>
+                    <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s"><strong>Services</strong></h2>
                     <div class="divider-center-small wow zoomIn" data-wow-duration="1s" data-wow-delay="0.6s"></div>
-                    <p class="section-subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"><em>We offer the best Qualtity Invitation services in the form of videos, websites, posters, and other variety of products that can be created based on the feedback or quotes provided.</em></p>
+                    <p class="section-subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"><em>We provide the best quality invitation services in the form of Caricatures, Animated Videos, Websites, Posters, and many other types of products.</em></p>
                 </div>
             </div> <!-- /.col -->
         </div>  <!-- /.row -->
@@ -370,8 +513,9 @@
                     </div>
                     <h4>Animated Videos</h4>
                     <div class="service-text">
-                        <p>On at tolerably depending do perceived. Luckily eat joy see own shyness minuter. So before remark at depart Did son unreserved.</p>
+                        <p>You will get a minimum 30sec duration, best quality Animated Video. Thereis an option to include the Caricature. You will get an easily shareables video file.</p>
                     </div>
+                      <button onclick="document.getElementById('id01').style.display='block'" class="sendnext btn btn-second btn-theme wow fadeInUp"  data-lang="en">Order Now</button>
                 </div>                   
             </div> <!-- /.col -->
 
@@ -383,8 +527,13 @@
                     </div>
                     <h4>Digital Cards</h4>
                     <div class="service-text">
-                        <p>Have spot part for his quit may. Enable it is square my an regard. Often merit stuff first oh up hills as his memorey got null in recording.</p>
+                        <p>Invitation cards are also known as digital cards with premium design. There is an option to add clickable links and add caricatures in it. You will get an easily shareable Pdf file.</p>
                     </div>
+
+                    <button onclick="document.getElementById('id01').style.display='block'" class="sendnext btn btn-second btn-theme wow fadeInUp"  data-lang="en">Order Now</button>
+                       <!-- LEARN A NEW STUFF
+                    <button type="submit" onclick="window.location.href='https://w3docs.com';" class="sendnext btn btn-second btn-theme wow fadeInUp"  data-lang="en">submit</button> -->
+
                 </div>                   
             </div> <!-- /.col -->
 
@@ -396,8 +545,9 @@
                     </div>
                     <h4>Web Invitations</h4>
                     <div class="service-text">
-                        <p>There spoke happy for you are out. Fertile how old address did showing because sitting replied six. Luckily eat joy see own shyness minuter.</p>
+                        <p>Invite your guest with New Trend, Then this will be the best choice. You will get a Website where you can share your Stories, Memories & save it for lifetime.</p>
                     </div>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="sendnext btn btn-second btn-theme wow fadeInUp"  data-lang="en">Order Now</button>
                 </div>                   
             </div> <!-- /.col -->
 
@@ -409,8 +559,9 @@
                     </div>
                     <h4>Other Stationary</h4>
                     <div class="service-text">
-                        <p>So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impress.</p>
+                        <p>We are also providing standee and all other assets using Digital Invitations. We have an experienced Graphics team who will do your all design work easier. </p>
                     </div>
+                    <button onclick="document.getElementById('id01').style.display='block'" class="sendnext btn btn-second btn-theme wow fadeInUp"  data-lang="en">Order Now</button>
                 </div>                   
             </div> <!-- /.col -->
 
@@ -609,7 +760,7 @@
                             <i class="fa fa-briefcase"></i>
                         </div>
                         <div class="stat-item-number">
-                            177
+                            58
                         </div>
                         <div class="stat-item-text">
                             Projects<br>Done
@@ -624,10 +775,10 @@
                             <i class="fa fa-users"></i>
                         </div>
                         <div class="stat-item-number">
-                            123
+                            12
                         </div>
                         <div class="stat-item-text">
-                            Happy<br>Clients
+                            Supported<br>Partners
                         </div>
                     </div>
                 </div> <!-- /.col -->
@@ -639,10 +790,10 @@
                             <i class="fa fa-thumbs-up"></i>
                         </div>
                         <div class="stat-item-number">
-                            999
+                          50
                         </div>
                         <div class="stat-item-text">
-                            Likes<br>Gained
+                            Plus Gained<br>Appreciation
                         </div>
                     </div>
                 </div> <!-- /.col -->
@@ -654,10 +805,10 @@
                             <i class="fa fa-trophy"></i>
                         </div>
                         <div class="stat-item-number">
-                            101
+                            23
                         </div>
                         <div class="stat-item-text">
-                            Awards<br>Received
+                            Area<br>Covered
                         </div>
                     </div>
                 </div> <!-- /.col -->
@@ -691,20 +842,26 @@
 
             <!-- === Testimonial item 1 === -->
             <div class="testimonial-item text-center">
-                <p class="testimonial-desc">"Residence you satisfied and rapturous certainty two. Procured outweigh as outlived so so. On in bringing graceful proposal blessing of marriage outlived. Son rent face our loud near."</p>
-                <h5 class="testimonial-author">Jenny Doe - Star Inc</h5>
+                <p class="testimonial-desc">"Sending "Digital Invitations" to those you invite allows you to personalize and make an event feel more tangible in the digital era. Thank you Team Govindam Diginvites "</p>
+                <h5 class="testimonial-author">Parmita Soni</h5>
             </div>
 
             <!-- === Testimonial item 2 === -->
             <div class="testimonial-item text-center">
-                <p class="testimonial-desc">"Excellent so to no sincerity smallness. Removal request delight if on he we. Unaffected in we by apartments astonished to decisively themselves. Offended ten old consider speaking."</p>
-                <h5 class="testimonial-author">Kathy Doe - Service Corp</h5>
+                <p class="testimonial-desc">"Since they provide a more practical, cost-effective, and environmentally friendly manner of notifying your guests of your event, Digital Invites have been slowly gaining popularity."</p>
+                <h5 class="testimonial-author">Deepak Nag</h5>
             </div>
 
             <!-- === Testimonial item 3 === -->
             <div class="testimonial-item text-center">
-                <p class="testimonial-desc">"Advanced and procured civility not absolute put continue. Overcame breeding or my concerns removing desirous so absolute. My melancholy unpleasing imprudence considered in advantages."</p>
-                <h5 class="testimonial-author">Jack Doe - Inka Design</h5>
+                <p class="testimonial-desc">"Printing all of the email invitations is one choice. Another choice is to send out digital invitations. These services are of the highest caliber that we are providing."</p>
+                <h5 class="testimonial-author">Shyam Ranjan</h5>
+            </div>
+
+             <!-- === Testimonial item 4 === -->
+             <div class="testimonial-item text-center">
+                <p class="testimonial-desc">"With digital invitations, you can send a text, photo, or link that will be delivered at your earliest convenience through email, social media, or other messaging services"</p>
+                <h5 class="testimonial-author">Satyesh Kumar</h5>
             </div>
 
         </div> <!-- /#owl-testimonials -->
@@ -725,7 +882,7 @@
                     <div class="section-title text-center m-bottom-40">
                         <h2 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s">Contact</h2>
                         <div class="divider-center-small wow zoomIn" data-wow-duration="1s" data-wow-delay="0.6s"></div>
-                        <p class="section-subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"><em>Lose away off why half led have near bed. At engage simple father of period others except. My giving do summer time dance hero of though narrow marked at.</em></p>
+                        <p class="section-subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"><em>We are always available to resolve your queries. Our primary focus is to satisfy our customers.</em></p>
                     </div>
                 </div> <!-- /.col -->
             </div>  <!-- /.row -->
@@ -734,36 +891,47 @@
 
                 <!-- === Contact Form === -->
                 <div class="col-md-7 col-sm-7 p-bottom-30">
-                    <div class="contact-form row">
+                    <div class="login-form row">
 
-                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-                        onload="if(submitted) {window.location='SucessSent.html';}"> </iframe> 
+                        <iframe name="login-form" id="login-form" style="display:none;"      
+    onload="if(submitted) {alert('Your Query is Submitted Sucessfully. \nOur Team will get back to you Soon.')} {document.getElementById('id01').style.display='none' } {window.location='index.html';}"> </iframe>  
 
-                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScj0aeX9ngZqQoGHQa43ZikMM8iqsjqJvIFmBwufD35UIwdhA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
-                            <div class="col-sm-6 contact-form-item wow zoomIn">
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScj0aeX9ngZqQoGHQa43ZikMM8iqsjqJvIFmBwufD35UIwdhA/formResponse" method="post" target="login-form" onsubmit="submitted=true">
+                            <div class="col-sm-6 login-form-item wow zoomIn">
                                 <input name="entry.1361404915" required type="text"   placeholder="Your Name: *"/>
                                 <span class="error" id="err-name">please enter name</span>
                             </div>
-                            <div class="col-sm-6 contact-form-item wow zoomIn">
+                            <div class="col-sm-6 login-form-item wow zoomIn">
                                 <input name="entry.706253180"  type="email" required placeholder="E-Mail: *"/>
                                 <span class="error" id="err-email">please enter e-mail</span>
                                 <span class="error" id="err-emailvld">e-mail is not a valid format</span>
                             </div>
-                            <div class="col-sm-12 contact-form-item wow zoomIn">
+                            <div class="col-sm-12 login-form-item wow zoomIn">
                                 <textarea name="entry.83573000" required placeholder="Your Message"></textarea>
                             </div>
-                            <div class="col-sm-12 contact-form-item">
-                                <button class="send_message btn btn-main btn-theme wow fadeInUp"  data-lang="en">submit</button>                
+
+                            <!-- <div class="captcha">-->
+                                <!-- <label for="captcha-input">Enter Captcha</label> -->
+                                
+                                <!-- <div class="col-sm-6 login-form-item wow zoomIn"> <div class="preview"></div></div>
+                                <div class="col-sm-6 login-form-item wow zoomIn">
+                                <div class="captcha-form">
+                                  <input type="text" id="captcha-form" placeholder="Enter captcha text">
+                                  <button class="captcha-refresh">
+                                    <i class="fa fa-refresh"></i>
+                                  </button>
+                                </div>
+                                </div>
+                              </div> -->
+
+
+                            <div class="col-sm-12 login-form-item">
+                                <button id="login-btn" class="send_message btn btn-main btn-theme wow fadeInUp"  data-lang="en">submit</button>                
                             </div>
-                            <div class="clear"></div>   
-                            <div class="error text-align-center" id="err-form">There was a problem validating the form please check!</div>
-                            <div class="error text-align-center" id="err-timedout">The connection to the server timed out!</div>
-                            <div class="error" id="err-state"></div>
+                           
                         </form> 
                                     
-                        <div class="clearfix"></div>
-                        <div id="ajaxsuccess">Successfully sent!!</div>
-                        <div class="clear"></div>
+                       
 
                     </div> <!-- /.contacts-form & inner row -->
                 </div> <!-- /.col -->
@@ -771,20 +939,31 @@
                 <!-- === Contact Information === -->
                 <div class="col-md-5 col-sm-5 p-bottom-30">
                     <address class="contact-info">
-
-                        <p class="m-bottom-30 wow slideInRight">Spring formal no county ye waited. My whether cheered at regular it of promise blushes perhaps.</p>
+ <!-- === Location === -->
+                      <div class="m-top-20 wow slideInRight">
+                        <div class="contact-info-icon">
+                         <i class="fa fa-location-arrow"></i>
+                        </div>
+                         <div class="contact-info-title">
+                            Address:
+                        </div>
+                        <div class="contact-info-text">
+                            <a href="https://goo.gl/maps/Np6pjnhiGF6g6i9k9" target="_blank">  
+                            Milind Nagar, Kurla West, Mumbai, MH 400070</a>
+                        </div> 
+                    </div> 
 
                         <!-- === Location === -->
                         <div class="m-top-20 wow slideInRight">
                             <div class="contact-info-icon">
-                             <i class="fa fa-location-arrow"></i>
+                             <i class="fa fa-whatsapp"></i>
                             </div>
                             
                             <div class="contact-info-title">
-                                Address:
+                               Whatsapp Number:
                             </div>
                             <div class="contact-info-text">
-                                Milind Nagar, Kurla West, Mumbai, MH 400070
+                                <a href="#" target="_blank">(+91) 778-9896-074</a>  
                             </div> 
                         </div> 
 
@@ -798,7 +977,7 @@
                                 Phone number:
                             </div>
                             <div class="contact-info-text">
-                                (+91) 778-9896-074
+                                <a href="#" target="_blank">(+91) 778-9896-074</a>  
                             </div> 
                         </div>
 
@@ -812,7 +991,7 @@
                                 Email:
                             </div>
                             <div class="contact-info-text">
-                                hellogovindam@gmail.com
+                                <a href="mailto: hellogovindam@gmail.com" target="_blank">hellogovindam@gmail.com</a>  
                             </div>
                         </div>
 
@@ -830,10 +1009,9 @@
         <div class="container">
             <small class="copyright pull-left">Copyrights © 2022 All Rights Reserved.</small>
             <div class="social-icon pull-right">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+                
+                <a href="instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-pinterest"></i></a>
-                <a href="https://g.co/kgs/cpGcbo" target="_blank"><i class="fa fa-google"></i></a>
                 <a href="#"><i class="fa fa-behance"></i></a>
                 <a href="#"><i class="fa fa-youtube"></i></a>
             </div>
@@ -856,6 +1034,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     
     <!-- Components Plugin -->
+  
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/jquery.appear.js"></script>
@@ -871,8 +1050,6 @@
     <script src="inc/revolution/js/jquery.themepunch.tools.min.js"></script>
     <script src="inc/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
-    <!-- Contact Form -->
-    <script src="js/contact.js"></script>
     
     <!-- Custom Plugin -->
     <script src="js/custom.js"></script>
@@ -971,6 +1148,60 @@
           }
       }); /*ready*/
   </script>
-    
+
+
+
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+    <iframe name="login-form1" id="login-form1" style="display:none;"      
+    onload="if(submitted) {alert('Submitted Sucessfully. \nWe sent you a confirmation email. Please check your inbox or spam folder.')} {document.getElementById('id01').style.display='none' }"> </iframe>  
+
+    <form class="modal-content animate" action="https://docs.google.com/forms/d/e/1FAIpQLSfkL4LpjWNrmf0i68YWaab6UUr9Zc7ESvfvPownmCzgVmKy0A/formResponse" method="post" target="login-form1" onsubmit="submitted=true">
+   
+        <Br><Br><Br><center><h3><U>Request an Order Call</U></h3>
+        <p><i>Our team will Call, you once you submit this form to learn more about your requirements. After that, your order will be processed.</i></p></center>
+        <div class="container">
+            <label><b>Name</b></label><br>
+            <input type="text" placeholder=" Write Your Name Here " name="entry.1361404915" required><br>
+
+            <label><b>Email</b></label><br>
+            <input type="text" placeholder="Your Mail Address" name="entry.706253180" required><br>
+
+            <label><b>Phone Number</b></label><br>
+            <input type="text" placeholder="10 digit Calling Number" name="entry.83573000" required><br><br>
+            <label><b>Required Service(s)</b></label><br>
+            <label>  
+                Animated Videos <input type="checkbox" name="entry.2004332184" value="Animated Videos">  &nbsp;&nbsp;&nbsp;&nbsp; 
+                Digital Cards <input type="checkbox" name="entry.2004332184" value="Digital Cards">  &nbsp;&nbsp;&nbsp;&nbsp; 
+                Web Invitations <input type="checkbox" name="entry.2004332184" value="Web Invitations">  &nbsp;&nbsp;&nbsp;&nbsp; 
+                Other Stationary <input type="checkbox" name="entry.2004332184" value="Other Stationary"> 
+            </label> <br>
+           <br>
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit"  id="sumbitted" class="signupbtn">Submit</button>
+                
+            
+            </div>
+        </div>
+        <br>
+                <br><br>
+                <br>
+    </form>
+</div>
+
+<!--close the modal by just clicking outside of the modal-->
+<script>
+    var modal = document.getElementById('id01');
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
   </body>
 </html>
