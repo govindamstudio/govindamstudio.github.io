@@ -1174,7 +1174,7 @@ blockquote {
   margin-top: 18px;
   border: none;
   z-index: 50;
-  margin-right: 5px;
+  margin-right: -600px;
 }
 .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -1193,6 +1193,62 @@ blockquote {
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
+
+
+@media (max-width: 800px) 
+ {
+  .navbar-toggle {
+  margin-top: 18px;
+  border: none;
+  z-index: 50;
+  margin-right: -250px;
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+  width: 18px;
+}
+.nav-solid .navbar-toggle .icon-bar {
+  background-color: #434343;
+}
+.nav-transparent .navbar-toggle:focus .icon-bar,
+.nav-transparent .navbar-toggle:hover .icon-bar {
+  background-color: #f7f7f7;
+}
+.navbar-toggle:focus,
+.navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 400px) 
+ {
+  .navbar-toggle {
+  margin-top: 18px;
+  border: none;
+  z-index: 50;
+  margin-right: -200px;
+}
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+  width: 18px;
+}
+.nav-solid .navbar-toggle .icon-bar {
+  background-color: #434343;
+}
+.nav-transparent .navbar-toggle:focus .icon-bar,
+.nav-transparent .navbar-toggle:hover .icon-bar {
+  background-color: #f7f7f7;
+}
+.navbar-toggle:focus,
+.navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+
+
 /*--------------------------------------------------
     08. Intro Section
 ---------------------------------------------------*/
