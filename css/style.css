@@ -16,17 +16,6 @@ body {
   font-family: 'Lato', sans-serif;
   color: #767676;
 }
-
-
-
-a1 {
-  color:#767676;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
 a {
   color: #FF3161;
   text-decoration: none;
@@ -361,116 +350,6 @@ overlay-light .YTPOverlay:before {
     clear: left;
   }
 }
-
-/*--------------------------------------------------
-    02. Custom Button 2
----------------------------------------------------*/
-.btn-second {
-  background-color: #434343;
-  padding: 10px 18px;
-  border: 1px solid #434343;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 0;
-  box-shadow: inset 0 0 0 0 #000;
-  -webkit-box-shadow: inset 0 0 0 0 #000;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.btn-second:hover,
-.btn-second:focus,
-.btn-second:active,
-.btn-second .active {
-  border-color: #000;
-  color: #fff;
-  box-shadow: inset 0 100px 0 0 #000;
-  -webkit-box-shadow: inset 0 100px 0 0 #000;
-}
-.btn-second.btn-2x {
-  padding: 12px 36px;
-  font-size: 14px;
-}
-.btn-second.btn-black {
-  background-color: #000;
-  border: 1px solid #000;
-  box-shadow: inset 0 0 0 0 #262626;
-  -webkit-box-shadow: inset 0 0 0 0 #262626;
-  color: #fff;
-}
-.btn-second.btn-black:hover,
-.btn-second.btn-black:focus,
-.btn-second.btn-black:active,
-.btn-second.btn-black .active {
-  box-shadow: inset 0 100px 0 0 #262626;
-  -webkit-box-shadow: inset 0 100px 0 0 #262626;
-  border: 1px solid #262626;
-  color: #fff;
-}
-.btn-second.btn-white {
-  background-color: #fff;
-  border: 1px solid #fff;
-  box-shadow: inset 0 0 0 0 #d9d9d9;
-  -webkit-box-shadow: inset 0 0 0 0 #d9d9d9;
-  color: #434343;
-}
-.btn-second.btn-white:hover,
-.btn-second.btn-white:focus,
-.btn-second.btn-white:active,
-.btn-second.btn-white .active {
-  box-shadow: inset 0 100px 0 0 #d9d9d9;
-  -webkit-box-shadow: inset 0 100px 0 0 #d9d9d9;
-  border: 1px solid #d9d9d9;
-  color: #434343;
-}
-.btn-second.btn-theme {
-  background-color: #434343;
-  border: 1px solid #434343;
-  box-shadow: inset 0 0 0 0 #D40032;
-  -webkit-box-shadow: inset 0 0 0 0 #D40032;
-}
-.btn-second.btn-theme:hover,
-.btn-second.btn-theme:focus,
-.btn-second.btn-theme:active,
-.btn-second.btn-theme .active {
-  box-shadow: inset 0 100px 0 0 ##FF3161;
-  -webkit-box-shadow: inset 0 100px 0 0 #FF3161;
-  border: 1px solid #FF3161;
-}
-.btn-second.btn-transparent {
-  background-color: transparent;
-  border: 1px solid #000;
-  color: #000;
-}
-.btn-second.btn-transparent:hover,
-.btn-second.btn-transparent:focus,
-.btn-second.btn-transparent:active,
-.btn-second.btn-transparent .active {
-  border-color: #000;
-  background-color: #000;
-  color: #fff;
-}
-.btn-second.btn-transparent-light {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  box-shadow: inset 0 0 0 0 #fff;
-  -webkit-box-shadow: inset 0 0 0 0 #fff;
-}
-.btn-second.btn-transparent-light:hover,
-.btn-second.btn-transparent-light:focus,
-.btn-second.btn-transparent-light:active,
-.btn-second.btn-transparent-light .active {
-  border-color: #fff;
-  box-shadow: inset 0 100px 0 0 #fff;
-  -webkit-box-shadow: inset 0 100px 0 0 #fff;
-  color: #000;
-}
-
-
-
 /*--------------------------------------------------
     02. Custom Button 
 ---------------------------------------------------*/
@@ -934,47 +813,6 @@ blockquote {
   float: none;
   display: inline-block;
 }
-.navbar-nav li {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  padding: 0 17px;
-  line-height: 70px;
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.navbar-nav li:last-child li{
-  padding-right: 0;
-
-  
-}
-.navbar .nav-wrap {
-  width: auto;
-  float: right;
-}
-.navbar-collapse {
-  padding: 0;
-  border-top: none;
-}
-.navbar-collapse.in {
-  overflow-x: hidden;
-}
-.nav-solid {
-  height: 70px;
-  -webkit-transition: height 0.3s ease-in-out;
-  -o-transition: height 0.3s ease-in-out;
-  transition: height 0.3s ease-in-out;
-}
-
-
-
-
-
-
-
 .navbar-nav li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -989,8 +827,6 @@ blockquote {
 }
 .navbar-nav li:last-child a {
   padding-right: 0;
-
-  
 }
 .navbar .nav-wrap {
   width: auto;
@@ -1009,13 +845,7 @@ blockquote {
   -o-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
 }
-
-
 .nav-solid .navbar-nav > li > a {
-  color: #434343;
-}
-
-.nav-solid .navbar-nav > li {
   color: #434343;
 }
 .nav-solid .navigation {
@@ -1051,16 +881,6 @@ blockquote {
 .navigation.sticky .navbar-nav > li > a {
   line-height: 70px;
 }
-
-
-.nav-transparent .navbar-default .navbar-nav > li {
-  color: #fff;
-}
-.navigation.sticky .navbar-nav > li {
-  line-height: 70px;
-}
-
-
 .navbar-nav > li > a:hover,
 .nav-transparent .navbar-default .navbar-nav > li > a:hover,
 .navbar .navbar-nav > .active > a,
@@ -1168,106 +988,13 @@ blockquote {
     line-height: 20px;
   }
 }
-
-@media (max-width: 390px) {
-  .navbar .nav-wrap {
-    width: 100%;
-    padding: 0;
-    min-height: 0;
-  }
-  .navbar-header {
-    width: 100%;
-    padding-right: 0;
-    float: none;
-  }
-  .navbar-header .logo-container .logo-wrap a {
-    padding-top: 0.5em;
-    height: 50px;
-  }
-  .navbar-header .navbar-toggle {
-    display: block;
-  }
-  .navbar-left,
-  .navbar-nav,
-  .navbar-right {
-    float: none !important;
-  }
-  .navbar-nav {
-    width: 100%;
-  }
-  .navbar-nav li {
-    float: none;
-  }
-  .navbar-nav li a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .navbar-collapse {
-    border-top: 1px solid transparent;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  }
-  .navbar-collapse.collapse {
-    display: none !important;
-    overflow: auto !important;
-  }
-  .navbar-collapse.collapse.in {
-    display: block !important;
-  }
-  .navbar .container-fluid {
-    padding: 0 20px;
-  }
-  .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
-  }
-  .nav-transparent {
-    height: 60px;
-  }
-  .nav-transparent .navbar .navigation {
-    background-color: #2a2a2a;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  .nav-transparent .navbar .navigation.sticky {
-    background-color: #2a2a2a;
-  }
-  .nav-transparent .container-fluid {
-    padding: 0 15px;
-  }
-  .nav-transparent .navbar-collapse {
-    border-top: 1px solid #5d5d5d;
-  }
-  .nav-transparent .nav > li > a {
-    padding: 15px 0 15px 15px;
-    border-bottom: 1px solid #5d5d5d;
-    line-height: 20px;
-  }
-  .nav-solid,
-  .nav-solid .navigation {
-    position: relative;
-  }
-  .nav-solid .navbar-nav {
-    padding: 0;
-  }
-  .nav-solid .navbar-collapse {
-    border-top: 1px solid #f7f7f7;
-  }
-  .nav-solid .nav > li > a {
-    padding: 15px 0 15px 15px;
-    border-bottom: 1px solid #f7f7f7;
-    line-height: 10px;
-  }
-}
-
 /* Navigation Toggle
 -------------------------------------------------------*/
 .navbar-toggle {
   margin-top: 18px;
   border: none;
   z-index: 50;
-  margin-right: -600px;
+  margin-right: 5px;
 }
 .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -1286,62 +1013,6 @@ blockquote {
 .navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
-
-
-@media (max-width: 800px) 
- {
-  .navbar-toggle {
-  margin-top: 18px;
-  border: none;
-  z-index: 50;
-  margin-right: -250px;
-}
-.navbar-toggle .icon-bar {
-  background-color: #fff;
-  width: 18px;
-}
-.nav-solid .navbar-toggle .icon-bar {
-  background-color: #434343;
-}
-.nav-transparent .navbar-toggle:focus .icon-bar,
-.nav-transparent .navbar-toggle:hover .icon-bar {
-  background-color: #f7f7f7;
-}
-.navbar-toggle:focus,
-.navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-  background-color: transparent;
-}
-
-@media (max-width: 400px) 
- {
-  .navbar-toggle {
-  margin-top: 18px;
-  border: none;
-  z-index: 50;
-  margin-right: -240px;
-}
-.navbar-toggle .icon-bar {
-  background-color: #fff;
-  width: 18px;
-}
-.nav-solid .navbar-toggle .icon-bar {
-  background-color: #434343;
-}
-.nav-transparent .navbar-toggle:focus .icon-bar,
-.nav-transparent .navbar-toggle:hover .icon-bar {
-  background-color: #f7f7f7;
-}
-.navbar-toggle:focus,
-.navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus,
-.navbar-default .navbar-toggle:hover {
-  background-color: transparent;
-}
-
-
-
 /*--------------------------------------------------
     08. Intro Section
 ---------------------------------------------------*/
@@ -1360,12 +1031,11 @@ blockquote {
   font-weight: 400;
 }
 .uranus.tparrows {
-  background: transparent;
+  background: #000;
   width: 32px;
-  height: 100px;
+  height: 32px;
 }
 .uranus.tparrows:before {
-  opacity: 0%;
   font-size: 16px;
   width: 32px;
   height: 32px;
@@ -2046,19 +1716,6 @@ blockquote {
   color: #434343;
   border: 1px solid #f8f8f8;
 }
-
-
-.widget .search-form input[type="email"] {
-  border: none;
-  padding: 12px 10px;
-  font-size: 13px;
-  width: 100%;
-  background: #f8f8f8;
-  border: 0 none;
-  outline: 0;
-  color: #434343;
-  border: 1px solid #f8f8f8;
-}
 .widget .search-form .submit-search {
   border: medium none;
   cursor: pointer;
@@ -2224,16 +1881,16 @@ blockquote {
 /*--------------------------------------------------
     20. Contact
 ---------------------------------------------------*/
-.login-form {
+.contact-form {
   padding-top: 10px;
 }
-.login-form .error {
+.contact-form .error {
   font-size: 11px;
   color: #ff0000;
   letter-spacing: 1px;
   display: none;
 }
-.login-form #ajaxsuccess {
+.contact-form #ajaxsuccess {
   background: #f5f5f5;
   padding: 10px 15px;
   color: #28a745;
@@ -2242,14 +1899,12 @@ blockquote {
   margin-left: auto;
   margin-right: auto;
 }
-.login-form-item {
+.contact-form-item {
   margin-bottom: 20px;
 }
-.login-form-item input[type="text"],
-.login-form-item input[type="email"],
-.login-form-item input[type="password"],
-
-.login-form-item textarea {
+.contact-form-item input[type="text"],
+.contact-form-item input[type="email"],
+.contact-form-item textarea {
   background: #f5f5f5;
   border: none;
   color: #000;
@@ -2257,80 +1912,38 @@ blockquote {
   width: 100%;
   padding: 10px 15px;
 }
-.login-form-item input[type="text"]:focus,
-.login-form-item input[type="email"]:focus,
-.login-form-item input[type="password"]:focus,
-.login-form-item textarea:focus {
+.contact-form-item input[type="text"]:focus,
+.contact-form-item input[type="password"]:focus,
+.contact-form-item textarea:focus {
   outline: none;
 }
-.login-form-item textarea {
+.contact-form-item textarea {
   height: 160px;
 }
-.login-form-item ::-webkit-input-placeholder {
+.contact-form-item ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #b3b3b3;
 }
-.login-form-item :-moz-placeholder {
+.contact-form-item :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #b3b3b3;
   opacity: 1;
 }
-.login-form-item ::-moz-placeholder {
+.contact-form-item ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #b3b3b3;
   opacity: 1;
 }
-.login-form-item :-ms-input-placeholder {
+.contact-form-item :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #b3b3b3;
 }
-
-
-.login-form .captcha {
-  padding-top: 10px;
-}
-.login-form .captcha .preview {
-  color:rgb(182, 3, 3);
-  width:100%;
-  text-align:left;
- 
-  
-  font-family:"monospace";
-}
-.login-form .captcha .preview span {
-  display:inline-block;
-  user-select:none;
-}
-.login-form .captcha .captcha-form {
-  display:flex;
- 
-}
-.login-form .captcha .captcha-form input {
-  width:50%;
-
-  border:1px solid #888;
-}
-.login-form .captcha .captcha-form .captcha-refresh {
-  width:40px;
-  border:none;
-  outline:none;
-  background:#888;
-  color:#eee;
-  cursor:pointer;
-}
-
-.form-sendnext-button {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.login-form-button {
+.contact-form-button {
   margin-bottom: 0;
 }
-.login-form-dark .login-form-item input[type="text"],
-.login-form-dark .login-form-item input[type="email"],
-.login-form-dark .login-form-item input[type="password"],
-.login-form-dark .login-form-item textarea {
+.contact-form-dark .contact-form-item input[type="text"],
+.contact-form-dark .contact-form-item input[type="password"],
+.contact-form-dark .contact-form-item textarea {
   background: #5d5d5d;
   color: #fff;
 }
@@ -2580,6 +2193,120 @@ blockquote {
   background: #FF3161;
   color: #fff;
 }
+
+
+  /*--------------------------------------------------
+      02. Custom Button 2
+  ---------------------------------------------------*/
+  .btn-second {
+    background-color: #434343;
+    padding: 10px 30px;
+    margin: 8px 0;
+    cursor: pointer;
+    border: 1px solid #434343;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 0 #000;
+    -webkit-box-shadow: inset 0 0 0 0 #000;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-second:hover,
+  .btn-second:focus,
+  .btn-second:active,
+  .btn-second .active {
+    border-color: #000;
+    color: #fff;
+    box-shadow: inset 0 100px 0 0 #000;
+    -webkit-box-shadow: inset 0 100px 0 0 #000;
+  }
+  .btn-second.btn-2x {
+    padding: 12px 36px;
+    font-size: 14px;
+  }
+  .btn-second.btn-black {
+    background-color: #000;
+    border: 1px solid #000;
+    box-shadow: inset 0 0 0 0 #262626;
+    -webkit-box-shadow: inset 0 0 0 0 #262626;
+    color: #fff;
+  }
+  .btn-second.btn-black:hover,
+  .btn-second.btn-black:focus,
+  .btn-second.btn-black:active,
+  .btn-second.btn-black .active {
+    box-shadow: inset 0 100px 0 0 #262626;
+    -webkit-box-shadow: inset 0 100px 0 0 #262626;
+    border: 1px solid #262626;
+    color: #fff;
+  }
+  .btn-second.btn-white {
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: inset 0 0 0 0 #d9d9d9;
+    -webkit-box-shadow: inset 0 0 0 0 #d9d9d9;
+    color: #434343;
+  }
+  .btn-second.btn-white:hover,
+  .btn-second.btn-white:focus,
+  .btn-second.btn-white:active,
+  .btn-second.btn-white .active {
+    box-shadow: inset 0 100px 0 0 #d9d9d9;
+    -webkit-box-shadow: inset 0 100px 0 0 #d9d9d9;
+    border: 1px solid #d9d9d9;
+    color: #434343;
+  }
+  .btn-second.btn-theme {
+    background-color: #434343;
+    border: 1px solid #434343;
+    box-shadow: inset 0 0 0 0 #D40032;
+    -webkit-box-shadow: inset 0 0 0 0 #D40032;
+  }
+  .btn-second.btn-theme:hover,
+  .btn-second.btn-theme:focus,
+  .btn-second.btn-theme:active,
+  .btn-second.btn-theme .active {
+    box-shadow: inset 0 100px 0 0 #FF3161;
+    -webkit-box-shadow: inset 0 100px 0 0 #FF3161;
+    border: 1px solid #FF3161;
+  }
+  .btn-second.btn-transparent {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+  }
+  .btn-second.btn-transparent:hover,
+  .btn-second.btn-transparent:focus,
+  .btn-second.btn-transparent:active,
+  .btn-second.btn-transparent .active {
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+  }
+  .btn-second.btn-transparent-light {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    box-shadow: inset 0 0 0 0 #fff;
+    -webkit-box-shadow: inset 0 0 0 0 #fff;
+  }
+  .btn-second.btn-transparent-light:hover,
+  .btn-second.btn-transparent-light:focus,
+  .btn-second.btn-transparent-light:active,
+  .btn-second.btn-transparent-light .active {
+    border-color: #fff;
+    box-shadow: inset 0 100px 0 0 #fff;
+    -webkit-box-shadow: inset 0 100px 0 0 #fff;
+    color: #000;
+  }
+
+
+  
+  
 /*--------------------------------------------------
     **. Responsive {should come last}
 ---------------------------------------------------*/

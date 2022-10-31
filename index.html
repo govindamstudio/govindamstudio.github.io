@@ -1,6 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+
+    
+    <style>
+        /*add full-width input fields*/
+        input[type=text],
+        input[type=password],
+        input[type=email],
+        input[type=number]   {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+        }
+    
+        /*set styles for the cancel button*/
+        .cancelbtn {
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                background-color: #434343;
+        }
+        /*float cancel and signup buttons and add an equal width*/
+        .cancelbtn,
+        .signupbtn {
+            float: left;
+            width: 50%
+        }
+        /*add padding to container elements*/
+        .container {
+            padding: 16px;
+        }
+        /*define the modal’s background*/
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+        /*define the modal-content background*/
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        /*define the close button*/
+        
+        .close {
+            position: absolute;
+            right: 35px;
+            top: 15px;
+            color: #000;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        /*define the close hover and focus effects*/
+        
+        .close:hover,
+        .close:focus {
+            color: red;
+            cursor: pointer;
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .signupbtn {
+            background-color: #FF3161;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            cursor: pointer;
+            
+        }
+        @media screen and (max-width: 400px) {
+            
+         
+            .modal {
+        
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.4);
+                padding-top: 100px;
+            }
+            /*define the modal-content background*/
+            
+            .modal-content {
+             
+                background-color: #fefefe;
+                margin: 100, 15;
+                border: 1px solid #888;
+                width: 80%;
+            }
+            /*define the close button*/
+                .cancelbtn,
+                .signupbtn {
+                    width: 100%;
+                }
+            }
+        
+        
+            @media screen and (max-width: 1502px) {
+                
+                input[type=text],
+                input[type=password],
+            input[type=email],
+            input[type=number]  {
+                width: 80%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 2px solid #ccc;
+                box-sizing: border-box;
+            }
+        
+            /*set styles for the cancel button*/
+            .cancelbtn {
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                background-color: #434343;
+            }
+            /*float cancel and signup buttons and add an equal width*/
+            .cancelbtn,
+            .signupbtn {
+                float: left;
+                width: 40%
+            }
+            /*add padding to container elements*/
+            .container {
+                padding: 16px;
+            }
+            /*define the modal’s background*/
+            
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.4);
+                padding-top: 60px;
+            }
+            /*define the modal-content background*/
+            
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto;
+                border: 1px solid #888;
+                width: 80%;
+            }
+            /*define the close button*/
+            
+            .close {
+                position: absolute;
+                right: 35px;
+                top: 15px;
+                color: #000;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            /*define the close hover and focus effects*/
+            
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+            
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            .signupbtn {
+                background-color: #FF3161;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                cursor: pointer;
+                
+            }
+        
+           
+        }
+    
+        
+    
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,23 +234,23 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
     
     <!-- Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- CSS Files For Plugin -->
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
-
-    <link href="css/magnific-popup.css" rel="stylesheet" />
-    <link href="css/YTPlayer.css" rel="stylesheet" />
-    <link href="inc/owlcarousel/css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="inc/owlcarousel/css/owl.theme.default.min.css" rel="stylesheet" />
-    <link href="inc/revolution/css/settings.css" rel="stylesheet" />
-    <link href="inc/revolution/css/layers.css" rel="stylesheet" />
-    <link href="inc/revolution/css/navigation.css" rel="stylesheet" />
+     <!-- CSS Files For Plugin -->
+     <link href="css/animate.css" rel="stylesheet">
+     <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet">
+     <link href="css/magnific-popup.css" rel="stylesheet" />
+     <link href="css/YTPlayer.css" rel="stylesheet" />
+     <link rel="stylesheet" href="inc/owlcarousel/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="inc/owlcarousel/css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="inc/revolution/css/settings.css" />
+     <link rel="stylesheet" href="inc/revolution/css/layers.css" />
+     <link rel="stylesheet" href="inc/revolution/css/navigation.css" />
     
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -48,222 +264,9 @@
   
 
 
-  <style>
-	/*add full-width input fields*/
-	input[type=text],
-	input[type=password],
-    input[type=email],
-    input[type=number]   {
-		width: 100%;
-		padding: 12px 20px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 2px solid #ccc;
-		box-sizing: border-box;
-	}
-
-	/*set styles for the cancel button*/
-	.cancelbtn {
-		padding: 14px 20px;
-		background-color: #434343;
-	}
-	/*float cancel and signup buttons and add an equal width*/
-	.cancelbtn,
-	.signupbtn {
-		float: left;
-		width: 50%
-	}
-	/*add padding to container elements*/
-	.container {
-		padding: 16px;
-	}
-	/*define the modal’s background*/
-	
-	.modal {
-		display: none;
-		position: fixed;
-		z-index: 1;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		overflow: auto;
-		background-color: rgb(0, 0, 0);
-		background-color: rgba(0, 0, 0, 0.4);
-		padding-top: 60px;
-	}
-	/*define the modal-content background*/
-	
-	.modal-content {
-		background-color: #fefefe;
-		margin: 5% auto 15% auto;
-		border: 1px solid #888;
-		width: 80%;
-	}
-	/*define the close button*/
-	
-	.close {
-		position: absolute;
-		right: 35px;
-		top: 15px;
-		color: #000;
-		font-size: 40px;
-		font-weight: bold;
-	}
-	/*define the close hover and focus effects*/
-	
-	.close:hover,
-	.close:focus {
-		color: red;
-		cursor: pointer;
-	}
-	
-	.clearfix::after {
-		content: "";
-		clear: both;
-		display: table;
-	}
-	
-    button {
-		background-color: #FF3161;
-		color: white;
-		padding: 14px 20px;
-		margin: 8px 0;
-		cursor: pointer;
-		width: 100%;
-	}
-
-   
-
-	@media screen and (max-width: 400px) {
-        
-     
-    .modal {
-
-		display: none;
-		position: fixed;
-		z-index: 1;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		overflow: auto;
-		background-color: rgb(0, 0, 0);
-		background-color: rgba(0, 0, 0, 0.4);
-		padding-top: 100px;
-	}
-	/*define the modal-content background*/
-	
-	.modal-content {
-     
-		background-color: #fefefe;
-		margin: 100, 15;
-		border: 1px solid #888;
-		width: 80%;
-	}
-	/*define the close button*/
-		.cancelbtn,
-		.signupbtn {
-			width: 100%;
-		}
-	}
+    </head>
 
 
-    @media screen and (max-width: 1502px) {
-        
-        input[type=text],
-        input[type=password],
-    input[type=email],
-    input[type=number]  {
-		width: 80%;
-		padding: 12px 20px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 2px solid #ccc;
-		box-sizing: border-box;
-	}
-
-	/*set styles for the cancel button*/
-	.cancelbtn {
-		padding: 14px 20px;
-        
-		background-color: #434343;
-	}
-	/*float cancel and signup buttons and add an equal width*/
-	.cancelbtn,
-	.signupbtn {
-		float: left;
-		width: 40%
-	}
-	/*add padding to container elements*/
-	.container {
-		padding: 16px;
-	}
-	/*define the modal’s background*/
-	
-	.modal {
-		display: none;
-		position: fixed;
-		z-index: 1;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		overflow: auto;
-		background-color: rgb(0, 0, 0);
-		background-color: rgba(0, 0, 0, 0.4);
-		padding-top: 60px;
-	}
-	/*define the modal-content background*/
-	
-	.modal-content {
-		background-color: #fefefe;
-		margin: 5% auto 15% auto;
-		border: 1px solid #888;
-		width: 80%;
-	}
-	/*define the close button*/
-	
-	.close {
-		position: absolute;
-		right: 35px;
-		top: 15px;
-		color: #000;
-		font-size: 40px;
-		font-weight: bold;
-	}
-	/*define the close hover and focus effects*/
-	
-	.close:hover,
-	.close:focus {
-		color: red;
-		cursor: pointer;
-	}
-	
-	.clearfix::after {
-		content: "";
-		clear: both;
-		display: table;
-	}
-	
-    button {
-		background-color: #FF3161;
-		color: white;
-		padding: 14px 10px;
-		margin: 8px 0;
-		cursor: pointer;
-		width: 80%;
-	}
-
-   
-	}
-
-
-    
-
-</style>
-
-</head>
   <body class="homepage_slider" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
     
     
@@ -276,7 +279,7 @@
     
     <!-- Start Navigation -->
     <header class="nav-solid" id="home">
-
+      
         <nav class="navbar navbar-fixed-top">
             <div class="navigation">
                 <div class="container-fluid">
@@ -306,9 +309,7 @@
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a data-scroll href="#home">Home</a></li>
                                     <li><a data-scroll href="#service">Service</a></li>
-                                    
                                     <!-- <li><a data-scroll href="#portfolio">Portfolio</a></li>
-                                   
                                     <li><a data-scroll href="#">Brochure</a></li> -->
                                     <li><a data-scroll href="#about">About</a></li>                       
                                     <li><a data-scroll href="#contact">Contact</a></li>
@@ -325,172 +326,27 @@
     </header>
     <!-- End Navigation -->
 
-    
     <!-- Start Intro -->
-    <section id="slider">
-        <div class="rev_slider_wrapper fullscreen-container" data-alias="agency-website" id="rev_slider_280_1_wrapper" style="background-color:#fff;padding:0px;height:1080px;">
-          <!-- START REVOLUTION SLIDER 5.1.4 fullscreen mode -->
-          <div class="rev_slider fullscreenbanner" id="rev_slider_nagency" style="display:none;">
-              <ul style="display:none;">
-
-                <!-- slider Item 1 -->
-                <li data-index="rs-1" data-transition="fadetotopfadefrombottom" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500" data-rotate="0"  data-saveperformance="off"  data-title="N.Agency" data-description="">
-                  <img src="img/slider/s1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-                  <!-- LAYER NR. 1 -->
-                  <div class="tp-caption NotGeneric-Title tp-resizeme white-color rs-parallaxlevel-3" 
-                    id="slide-1-layer-1" 
-                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['-160','-170','-170','-120']" 
-                    data-fontsize="['70','60','60','36']"
-                    data-lineheight="['70','60','60','50']"
-                    data-width="none"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"              
-                    data-transform_in="y:[100%];z:0;rZ:-35deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                    data-start="1000" 
-                    data-splitin="chars" 
-                    data-splitout="none" 
-                    data-responsive_offset="on" 
-                    data-elementdelay="0.05"                    
-                    style="z-index: 5; white-space: nowrap;">Govindam Diginvites
-                  </div>
-
-                  <!-- LAYER NR. 2 -->
-                  <div class="tp-caption NotGeneric-SubTitle tp-resizeme white-color rs-parallaxlevel-4" 
-                    id="slide-1-layer-2" 
-                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['-80','-90','-90','-60']"
-                    data-fontsize="['28','24','24','20']"
-                    data-lineheight="['28','24','36','30']"
-                    data-width="none"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"               
-                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                    data-start="1500" 
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on"                     
-                    style="z-index: 6; white-space: nowrap;">Say hello to Digital Invitations
-                  </div>
-
-                  <!-- LAYER NR. 3 -->
-                  <div class="tp-caption rs-parallaxlevel-5" 
-                    id="slide-1-layer-3" 
-                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['15','5','5','10']" 
-                    data-width="none"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"
-                    data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-                    data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;"
-                    data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeInOut;" 
-                    data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                    data-mask_out="x:inherit;y:inherit;" 
-                    data-start="2000" 
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]'
-                    data-responsive_offset="on" 
-                    data-responsive="off"                   
-                    style=""><a data-scroll href='#service' class='btn btn-main btn-white'>Our Services</a>
-                  </div>           
-                
-                </li>
-
-                <!-- slider Item 2 -->
-                <!-- <li data-index="rs-3" data-transition="slideremoveright" data-slotamount="default" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500" data-rotate="0"  data-saveperformance="off">
-                  <img src="img/slider/s3.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-
-                 
-                  <div class="tp-caption NotGeneric-Title tp-resizeme black-color rs-parallaxlevel-3" 
-                    id="slide-2-layer-1" 
-                    data-x="['left','left','left','left']" data-hoffset="['0','50','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['-100','-100','-100','-85']" 
-                    data-fontsize="['70','60','60','36']"
-                    data-lineheight="['70','60','60','50']"
-                    data-width="none"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"              
-                    data-transform_in="y:[100%];z:0;rx:0deg;sX:1;sY:1;skX:0;skY:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
-                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                    data-start="1000" 
-                    data-splitin="chars" 
-                    data-splitout="none" 
-                    data-responsive_offset="on" 
-                    data-elementdelay="0.05"                    
-                    style="z-index: 6; ;">Creative & Eco Friendly
-                  </div>
-
-                 
-                  <div class="tp-caption tp-resizeme NotGeneric-Text black-color rs-parallaxlevel-4" 
-                    id="slide-2-layer-2" 
-                    data-x="['left','left','left','left']" data-hoffset="['0','50','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','-10']"
-                    data-fontsize="['18','18','20','14']"
-                    data-lineheight="['28','28','32','24']"
-                    data-width="none"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"               
-                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
-                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
-                    data-start="1500" 
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-responsive_offset="on"                   
-                
-                    style="z-index: 6; ">Since they provide a more practical, cost-effective, and environmentally <br> friendly manner of notifying your guests of your event, <br> <b>Digital Invites have been slowly gaining popularity.</b>
-
+    <section class="parallax-bg" style="background-image:url(img/slider/s1.jpg)" data-stellar-background-ratio="0.5">
+        <!-- Section Title -->
+            <div class="js-height-full container">
+                <div class="intro-content white-color text-center vertical-section">
+                    <div class="vertical-content">
+                    <h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.8s">Welcome to</h3>
+                    <h1 class="wow zoomIn m-bottom-20" data-wow-duration="1s" data-wow-delay="0.6s">Govindam Diginvites</h1> 
+                    <p class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.9s">Digital Invitations || Eco Friendly || Cost Effective || Easy to Share</p>
+                    <a data-scroll href="#service" class="btn btn-main btn-theme wow fadeInUp" data-wow-delay="01.0s">Explore Services</a>
+                    </div>
                 </div>
-
-                 
-                  <div class="tp-caption rs-parallaxlevel-5" 
-                    id="slide-2-layer-3" 
-                    data-x="['left','left','left','left']" data-hoffset="['0','50','0','0']" 
-                    data-y="['middle','middle','middle','middle']" data-voffset="['105','105','115','85']" 
-                    data-width="none"
-                    data-height="none"
-                    data-whitespace="nowrap"
-                    data-transform_idle="o:1;"
-                    data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
-                    data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);cursor:pointer;"
-                    data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeInOut;" 
-                    data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-                    data-mask_out="x:inherit;y:inherit;" 
-                    data-start="2000" 
-                    data-splitin="none" 
-                    data-splitout="none" 
-                    data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]'
-                    data-responsive_offset="on" 
-                    data-responsive="off"                   
-                    style="white-space: nowrap;"><a data-scroll href='#contact' class='btn btn-main btn-black'>Contact Us</a>
-                  </div>          
-                
-                </li> -->
-
-               
-              </ul>
-              <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-          </div>
-      </div>
-    </section>
-    <!-- End Intro -->
-
+                <!-- Scroll Down -->
+                <div class="scroll-next">
+                    <a data-scroll href="#service" class="scroll-down"><i class="fa fa-angle-down scroll-down-icon"></i></a>
+                </div>
+                <!-- End Scroll Down -->
+            </div>
+        </section>
+        <!-- End Intro -->
+        
  <!-- Start Service -->
  <section id="service" class="p-top-80 p-bottom-80">
     <div class="container">
@@ -895,45 +751,33 @@
 
                 <!-- === Contact Form === -->
                 <div class="col-md-7 col-sm-7 p-bottom-30">
-                    <div class="login-form row">
+                    <div class="contact-form row">
 
-                        <iframe name="login-form" id="login-form" style="display:none;"      
+                        <iframe name="contact-form" id="contact-form" style="display:none;"      
     onload="if(submitted) {alert('Your Query is Submitted Sucessfully. \nOur Team will get back to you Soon.')} {document.getElementById('id01').style.display='none' } {window.location='index.html';}"> </iframe>  
 
-                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScj0aeX9ngZqQoGHQa43ZikMM8iqsjqJvIFmBwufD35UIwdhA/formResponse" method="post" target="login-form" onsubmit="submitted=true">
-                            <div class="col-sm-6 login-form-item wow zoomIn">
-                                <input name="entry.1361404915" required type="text"   placeholder="Your Name: *"/>
-                                <span class="error" id="err-name">please enter name</span>
-                            </div>
-                            <div class="col-sm-6 login-form-item wow zoomIn">
-                                <input name="entry.706253180"  type="email" required placeholder="E-Mail: *"/>
-                                <span class="error" id="err-email">please enter e-mail</span>
-                                <span class="error" id="err-emailvld">e-mail is not a valid format</span>
-                            </div>
-                            <div class="col-sm-12 login-form-item wow zoomIn">
-                                <textarea name="entry.83573000" required placeholder="Your Message"></textarea>
-                            </div>
-
-                            <!-- <div class="captcha">-->
-                                <!-- <label for="captcha-input">Enter Captcha</label> -->
-                                
-                                <!-- <div class="col-sm-6 login-form-item wow zoomIn"> <div class="preview"></div></div>
-                                <div class="col-sm-6 login-form-item wow zoomIn">
-                                <div class="captcha-form">
-                                  <input type="text" id="captcha-form" placeholder="Enter captcha text">
-                                  <button class="captcha-refresh">
-                                    <i class="fa fa-refresh"></i>
-                                  </button>
-                                </div>
-                                </div>
-                              </div> -->
-
-
-                            <div class="col-sm-12 login-form-item">
-                                <button id="login-btn" class="send_message btn btn-main btn-theme wow fadeInUp"  data-lang="en">submit</button>                
-                            </div>
-                           
-                        </form> 
+                       
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScj0aeX9ngZqQoGHQa43ZikMM8iqsjqJvIFmBwufD35UIwdhA/formResponse" method="post" target="contact-form" onsubmit="submitted=true">
+        <div class="col-sm-6 contact-form-item wow zoomIn">
+            <input name="entry.1361404915" required type="text"   placeholder="Your Name: *"/>
+           
+        </div>
+        <div class="col-sm-6 contact-form-item wow zoomIn">
+            <input name="entry.706253180"  type="email" required placeholder="E-Mail: *"/>
+            
+        </div>
+        <div class="col-sm-12 contact-form-item wow zoomIn">
+            <textarea name="entry.83573000" id="message" placeholder="Your Message" required"></textarea>
+        </div>
+        
+        <div class="col-sm-12 contact-form-item">
+            <button id="login-btn" class="send_message btn btn-main btn-theme wow fadeInUp"  data-lang="en">submit</button>                
+        </div>
+        
+        </form> 
+                
+    <div class="clearfix"></div>
+    
                                     
                        
 
@@ -1026,6 +870,7 @@
     <!-- End Footer -->
 
 
+
     <!-- Back to top -->
     <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i></a>
     <!-- /Back to top -->
@@ -1038,7 +883,6 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     
     <!-- Components Plugin -->
-  
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/jquery.appear.js"></script>
@@ -1054,6 +898,8 @@
     <script src="inc/revolution/js/jquery.themepunch.tools.min.js"></script>
     <script src="inc/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
+    <!-- Contact Form -->
+    <script src="js/contact.js"></script>
     
     <!-- Custom Plugin -->
     <script src="js/custom.js"></script>
@@ -1075,10 +921,10 @@
 
       var revapi280;
       tpj(document).ready(function() {
-          if (tpj("#rev_slider_nagency").revolution == undefined) {
-              revslider_showDoubleJqueryError("#rev_slider_nagency");
+          if (tpj("#rev_slider_280_1").revolution == undefined) {
+              revslider_showDoubleJqueryError("#rev_slider_280_1");
           } else {
-              revapi280 = tpj("#rev_slider_nagency").show().revolution({
+              revapi280 = tpj("#rev_slider_280_1").show().revolution({
                   sliderType: "standard",
                   sliderLayout: "fullscreen",
                   dottedOverlay: "none",
@@ -1157,10 +1003,10 @@
 
 <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
-    <iframe name="login-form1" id="login-form1" style="display:none;"      
+    <iframe name="contact-form1" id="contact-form1" style="display:none;"      
     onload="if(submitted) {alert('Submitted Sucessfully. \nWe sent you a confirmation email. Please check your inbox or spam folder.')} {document.getElementById('id01').style.display='none' }"> </iframe>  
 
-    <form class="modal-content animate" action="https://docs.google.com/forms/d/e/1FAIpQLSfkL4LpjWNrmf0i68YWaab6UUr9Zc7ESvfvPownmCzgVmKy0A/formResponse" method="post" target="login-form1" onsubmit="submitted=true">
+    <form class="modal-content animate" action="https://docs.google.com/forms/d/e/1FAIpQLSfkL4LpjWNrmf0i68YWaab6UUr9Zc7ESvfvPownmCzgVmKy0A/formResponse" method="post" target="contact-form1" onsubmit="submitted=true">
    
         <Br><Br><Br><center><h3><U>Request an Order Call</U></h3>
         <p><i>Our team will Call, you once you submit this form to learn more about your requirements. After that, your order will be processed.</i></p></center>
@@ -1183,9 +1029,9 @@
            <br>
 
             <div class="clearfix">
+              
                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                 <button type="submit"  id="sumbitted" class="signupbtn">Submit</button>
-                
             
             </div>
         </div>
