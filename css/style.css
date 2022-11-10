@@ -911,6 +911,7 @@ blockquote {
   }
   .navbar-header .logo-container .logo-wrap a {
     height: 70px;
+    width: auto;
   }
   .navbar-header .navbar-toggle {
     display: block;
@@ -992,6 +993,7 @@ blockquote {
 
     html{
         font-size: 50%;
+        
     }
 
 }
