@@ -112,7 +112,20 @@ overlay-light .YTPOverlay:before {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
+
+@media  (max-width: 991px) {
+
+  .parallax-bg {
+    position: relative;
+    background-attachment: fixed;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+
 .fixed-height-large {
   min-height: 800px;
 }
