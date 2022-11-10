@@ -988,6 +988,13 @@ blockquote {
     line-height: 20px;
   }
 }
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
 /* Navigation Toggle
 -------------------------------------------------------*/
 .navbar-toggle {
