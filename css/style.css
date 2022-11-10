@@ -120,7 +120,7 @@ overlay-light .YTPOverlay:before {
   .parallax-bg {
     position: relative;
     background-attachment: fixed;
-    
+    background-position: 20% 0;
     background-repeat: no-repeat;
     background-size: cover;
 }
