@@ -17,7 +17,72 @@
             border: 2px solid #ccc;
             box-sizing: border-box;
         }
-    
+    /* media queries  */
+@media (max-width:991px){
+
+html{
+    font-size: 55%;
+}
+
+.header{
+    padding:2rem;
+}
+
+section{
+    padding:2rem;
+}
+
+}
+
+@media (max-width:768px){
+
+#menu-btn{
+    display: initial;
+}
+
+.header .navbar{
+    position: absolute;
+    top:115%; right: 2rem;
+    background:#fff;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    border-radius: .5rem;
+    width: 30rem;
+    transform: scale(0);
+    transform-origin: top right;
+    opacity: 0;
+}
+
+.header .navbar.active{        
+    transform: scale(1);
+    opacity: 1;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    display: block;
+    padding:1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+}
+
+.header .navbar a:hover{
+    background: var(--bg);
+}
+
+.home .content{
+    text-align: center;
+}
+
+}
+
+@media (max-width:450px){
+
+html{
+    font-size: 50%;
+}
+
+}
         /*set styles for the cancel button*/
         .cancelbtn {
                 color: white;
